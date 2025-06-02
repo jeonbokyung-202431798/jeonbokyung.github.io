@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+.clear {
+    clear:both;
+}
+
+body {
+    font-family: "맑은고딕", "돋움";
+    padding: 10px;
+    font-size: 16px;
+    background-color: #f1f1f1;
+}
+
+
+#page {
+    width: 100%;
+    margin:0 auto;
+}
+
+header {
+    background-color: #313131;
+    width: 100%;
+    height: 100px;
+}
+
+header #logo {
+    float:left;
+    margin:11px 0 0 15px;
+    width: 200px;
+}
+
+header #top_menu {
+    float: right;
+    margin: 43px 10px 0 0;
+    color:#ffffff
+}
+
+header #top_menu li {
+    display: inline;
+    margin: 0 10px 0 20px;
+}
+header a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+main {
+    margin-top: 10px;
+}
+#main_title {
+    font-family: "맑은고딕";
+    padding-bottom:2px;
+    border-bottom:solid 2px #aaaaaa;
+    text-align: left;
+}
+main #menu ul {
+    margin:30px 0 0 30px;
+}
+main #menu li {
+    display: inline-block;
+    width: 95px;
+    height: 30px;
+    border: solid 1px #cccccc;
+    background-color: #ffffff;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 12px;
+    padding: 7px; 
+    color: #313131;
+}
+main #menu li a {
+    text-decoration: none;
+    color: #313131;
+}
+main div {
+    margin: 30px;
+    display: inline-block;
+}
+main div img {
+    width: 400px;
+    border: solid 1px #cccccc;
+    border-radius: 3px;
+}
+.brand {
+    text-align:center;
+}
+.name {
+    font-weight:bold;
+    font-size: 18px;
+    margin-top: 10px;
+}
+.explain {
+    font-size: 14px;
+}
+
+footer {
+    margin-top: 30px;
+    padding: 20px 0 0 15px;
+    height: 100px;
+    background-color:#313131;
+    color: #ffffff;
+}
+footer #about {
+    float:left;
+}
+footer #footer_menu li {
+    margin-top: 5px;
+    font-size: 13px;
+}
+@media screen and (max-width: 1024px) {
+    header {
+        height: 160px;
+    }
+
+    main div {
+        float: none;
+        display: block;
+        width: 100%;
+        margin: 30px auto 20px auto;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    #top_menu li {
+    float: left;
+    margin: 5px 0;
+    }
+    header {
+        height: 180px;
+    }
+}
+</style>
+</head>
+<body>
+<div id="page">
+    <header>
+        <a href="index.html"><img id="logo" src="logo.jpg"></a>
+        <ul id="top_menu">
+            <li><a href="subpage_1.html">꼬꼬의 정보</a></li>
+            <li><a href="subpage_2.html">꼬꼬의 룩북</a></li>
+            <li><a href="subpage_3_top.html">꼬꼬의 브랜드</a></li>
+            <li><a href="subpage_4.html">꼬꼬의 옷장</a></li>
+            <li><a href="subpage_5.html">꼬꼬의 스타일 변천사</a></li>
+        </ul>
+    </header>
+    <div class="clear"></div>
+    <main>
+    <h3 id="main_title">꼬꼬의 브랜드</h3>
+        <section id="menu">
+            <ul>
+                <li><a href="subpage_3_top.html">상의</a></li>
+                <li><a href="subpage_3_bottom.html">하의</a></li>
+                <li><a href="subpage_3_shoes.html">신발</a></li>
+                <li><a href="subpage_3_acc.html">패션소품</a></li>
+            </ul>
+        </section>
+        <div>
+            <ul class="brand">
+                <li><img src="retriever.jpg"></li>
+                <li class="name">Retriever Club</li>
+                <li class="explain">데일리 캐주얼 웨어를 선보이는 한국의 스트리트 패션 브랜드<br>독특하고 귀여운 프린팅으로 인기를 끌고 있음</li>
+            </ul>
+        </div>
+        <div>
+            <ul class="brand">
+                <li><img src="adidas.jpg"></li>
+                <li class="name">Adidas</li>
+                <li class="explain">세계적인 스포츠웨어 브랜드<br>편안함과 스타일을 동시에 추구함</li>
+            </ul>
+        </div>
+        <div>
+            <ul class="brand">
+                <li><img src="avandress.jpg"></li>
+                <li class="name">Avandress</li>
+                <li class="explain">유니섹스 캐주얼 브랜드<br>편안하면서도 트렌디한 스타일을 추구함</li>
+            </ul>
+        </div>
+    </main>
+    <div class="clear"></div>
+    <footer>
+        <div id="about">
+            <ul id="footer_menu">
+                <li>@qhrrrud_21</li>
+                <li>관광경영학과 24학번 전보경</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
